@@ -1,5 +1,5 @@
 {
-  "name": "@pichrt/lambda-stubs",
+  "name": "lambda-stubs",
   "version": "0.1.3",
   "description": "",
   "main": "dist/index.js",
