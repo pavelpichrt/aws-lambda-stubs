@@ -1,6 +1,6 @@
 {
   "name": "@pichrt/lambda-stubs",
-  "version": "0.1.33",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
