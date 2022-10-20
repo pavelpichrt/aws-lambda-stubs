@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`apiGatewayAuthorizerEvent Generates a correct stub 1`] = `
+{
+  "authorizationToken": "authorization-token-stub",
+  "methodArn": "arn:aws:execute-api:eu-west-1:123456789012:example/prod/POST/{proxy+}",
+  "type": "TOKEN",
+}
+`;
+
+exports[`apiGatewayProxyEvent Generates a correct stub 1`] = `
+{
+  "body": null,
+  "httpMethod": "POST",
+  "isBase64Encoded": false,
+  "multiValueQueryStringParameters": null,
+  "path": "/mock-stage//mock/foo/path",
+  "pathParameters": {
+    "id": "foo",
+  },
+  "queryStringParameters": null,
+  "resource": "/mock/{id}/path",
+  "stageVariables": null,
+}
+`;
+
+exports[`apiGatewayProxyEvent Generates a correct stub 2`] = `undefined`;
+
+exports[`apiGatewayProxyEvent Generates a correct stub 3`] = `
+{
+  "accountId": "123456278901",
+  "apiId": "mockapi",
+  "domainName": "mockapi.execute-api.eu-west-2.amazonaws.com",
+  "domainPrefix": "mockapi",
+  "httpMethod": "POST",
+  "identity": {
+    "accessKey": null,
+    "accountId": null,
+    "apiKey": null,
+    "apiKeyId": null,
+    "caller": null,
+    "clientCert": null,
+    "cognitoAuthenticationProvider": null,
+    "cognitoAuthenticationType": null,
+    "cognitoIdentityId": null,
+    "cognitoIdentityPoolId": null,
+    "principalOrgId": null,
+    "sourceIp": "123.123.123.123",
+    "user": null,
+    "userAgent": "MockApi/1.0.0",
+    "userArn": null,
+  },
+  "path": "/mock-stage//mock/foo/path",
+  "protocol": "HTTP/1.1",
+  "resourcePath": "/mock/{id}/path",
+  "stage": "mock-stage",
+}
+`;
+
+exports[`apiGatewayProxyEvent Generates a correct stub 4`] = `
+[
+  "application/json",
+]
+`;

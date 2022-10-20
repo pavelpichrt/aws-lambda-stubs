@@ -1,0 +1,2 @@
+# If we don’t have an .npmignore, NPM will automatically exclude gitignored files from being published.
+# That would prevent gitignored directory 'dist' to be published

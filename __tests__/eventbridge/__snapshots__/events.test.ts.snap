@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`eventBridgeEvent Generates a correct stub 1`] = `
+{
+  "account": "123456789012",
+  "detail": {},
+  "detail-type": "Scheduled Event",
+  "region": "eu-west-1",
+  "resources": [
+    "arn:aws:events:eu-west-1:123456789012:rule/ExampleRule",
+  ],
+  "source": "aws.events",
+  "version": "1",
+}
+`;

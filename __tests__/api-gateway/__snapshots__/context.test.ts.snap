@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`apiGatewayProxyContext Generates a correct stub with arguments specified 1`] = `
+{
+  "callbackWaitsForEmptyEventLoop": true,
+  "done": [Function],
+  "fail": [Function],
+  "functionName": "my-function",
+  "functionVersion": "1",
+  "getRemainingTimeInMillis": [Function],
+  "invokedFunctionArn": "arn:aws:lambda:eu-west-1:123456278901:function:my-function:latest",
+  "logGroupName": "/aws/lambda/my-function",
+  "memoryLimitInMB": "512",
+  "succeed": [Function],
+}
+`;
+
+exports[`apiGatewayProxyContext Generates a correct stub with default arguments 1`] = `
+{
+  "callbackWaitsForEmptyEventLoop": true,
+  "done": [Function],
+  "fail": [Function],
+  "functionName": "mock-function-name",
+  "functionVersion": "1",
+  "getRemainingTimeInMillis": [Function],
+  "invokedFunctionArn": "arn:aws:lambda:eu-west-1:123456278901:function:mock-function-name:latest",
+  "logGroupName": "/aws/lambda/mock-function-name",
+  "memoryLimitInMB": "128",
+  "succeed": [Function],
+}
+`;

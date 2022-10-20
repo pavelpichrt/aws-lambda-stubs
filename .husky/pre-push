@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run test:unit
+
+printf "\nWill check for outdated dependencies...\n\n"
+
+npm outdated || printf "\n\nFound some outdated dependencies, will not prevent the 'git push', but would be good to update...\n\n"

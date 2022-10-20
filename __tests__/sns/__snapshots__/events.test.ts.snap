@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snsEvent Generates a correct stub 1`] = `
+{
+  "EventSource": "aws:sns",
+  "EventSubscriptionArn": "arn:aws:sns:us-east-1:123456789012:ExampleTopic",
+  "EventVersion": "1.0",
+}
+`;
+
+exports[`snsEvent Generates a correct stub 2`] = `
+{
+  "Message": "EXAMPLE-MESSAGE",
+  "MessageAttributes": {
+    "Test": {
+      "Type": "String",
+      "Value": "TestString",
+    },
+    "TestBinary": {
+      "Type": "Binary",
+      "Value": "TestBinary",
+    },
+  },
+  "Signature": "EXAMPLE",
+  "SignatureVersion": "1",
+  "SigningCertUrl": "EXAMPLE",
+  "Subject": "EXAMPLE-SUBJECT",
+  "TopicArn": "arn:aws:sns:eu-west-1-1:123456789012:ExampleTopic",
+  "Type": "Notification",
+  "UnsubscribeUrl": "EXAMPLE-UNSUBSCRIBE-URL",
+}
+`;
