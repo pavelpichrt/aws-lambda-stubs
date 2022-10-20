@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "prepare": "ct script npm_prepare_package",
+    "prepare": "npm run build",
     "build": "tsc -p tsconfig.build.json",
     "watch": "npx tsc-watch -p tsconfig.build.json",
     "lint": "eslint .",
