@@ -9,7 +9,7 @@ Supports unit testing (or other use cases) in AWS lambda functions by providing 
 Generates API Gateway authorizer stub.
 
 ```javascript
-import { apiGatewayAuthorizerEvent } from '@pichrt/lambda-stubs';
+import { apiGatewayAuthorizerEvent } from 'lambda-stubs';
 
 const actualResult = await handler(apiGatewayAuthorizerEvent());
 
@@ -19,10 +19,7 @@ expect(actualResult).toMatchSnapshot();
 ### Proxy event handler
 
 ```typescript
-import {
-  apiGatewayProxyEvent,
-  apiGatewayProxyContext,
-} from '@pichrt/lambda-stubs';
+import { apiGatewayProxyEvent, apiGatewayProxyContext } from 'lambda-stubs';
 
 const actualResult = await handler(
   apiGatewayProxyEvent({
@@ -63,7 +60,7 @@ expect(actualResult).toMatchSnapshot();
 ## SNS
 
 ```typescript
-import { snsEvent, apiGatewayProxyContext } from '@pichrt/lambda-stubs';
+import { snsEvent, apiGatewayProxyContext } from 'lambda-stubs';
 
 const actualResult = await handler(
   snsEvent({
@@ -100,7 +97,7 @@ expect(actualResult).toMatchSnapshot();
 ### Scheduled Event
 
 ```typescript
-import { eventBridgeEvent, apiGatewayProxyContext } from '@pichrt/lambda-stubs';
+import { eventBridgeEvent, apiGatewayProxyContext } from 'lambda-stubs';
 
 const actualResult = await handler(
   eventBridgeEvent({
